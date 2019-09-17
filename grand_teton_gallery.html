@@ -4,14 +4,11 @@
 <head>
     <style>
         div.gallery {
-            margin: 5px;
-            border: 1px solid black;
-            float: left;
-            width: 180px;
+            border: 1px solid #ccc;
         }
         
         div.gallery:hover {
-            border: 1px solid #777777;
+            border: 1px solid rgb(250, 234, 234);
         }
         
         div.gallery img {
@@ -19,61 +16,107 @@
             height: auto;
         }
         
-        div.description {
+        div.desc {
             padding: 15px;
             text-align: center;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
 
 <body>
-    <div class="gallery">
-        <a target="_blank" href="Wyoming Photos/Bison.JPG">
-            <img src='Wyoming Photos/Bison.JPG' alt='Bison' width="680" height="400">
-        </a>
-        <div class="description">Some bisons roaming the plains of Wyoming</div>
+    <h2 style="font-family: sans-serif; font-size : 3em">Wyoming Gallery</h2>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="imgs/Wyoming Photos/Bison.JPG">
+                <img src='imgs/Wyoming Photos/Bison.JPG' alt='Bison' width="680" height="400">
+            </a>
+            <div class="description">Some bisons roaming the plains of Wyoming</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Wyoming Photos/Ready.JPG">
-            <img src='Wyoming Photos/Ready.JPG'alt = "Ready"width="680" height="400">
-        </a>
-        <div class="description">Me ready to hike into the backcountry</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="imgs/Wyoming Photos/Ready.JPG">
+                <img src='imgs/Wyoming Photos/Ready.JPG' alt="Ready" width="680" height="400">
+            </a>
+            <div class="description">Me ready to hike into the backcountry</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Wyoming Photos/Clouds.JPG">
-            <img src='Wyoming Photos/Clouds.JPG' alt='Cloudy Mountains' width="680" height="400">
-        </a>
-        <div class="description">The Tetons wrapped in cloud</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="imgs/Wyoming Photos/Clouds.JPG">
+                <img src='imgs/Wyoming Photos/Clouds.JPG' alt='Cloudy Mountains' width="680" height="400">
+            </a>
+            <div class="description">The Tetons wrapped in cloud</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Wyoming Photos/Death Canyon.JPG">
-            <img src="Wyoming Photos/Death Canyon.JPG" alt='Death Canyon' width="680" height="400">
-        </a>
-        <div class="description">The floor of Death Canyon</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="imgs/Wyoming Photos/Death Canyon.JPG">
+                <img src="imgs/Wyoming Photos/Death Canyon.JPG" alt='Death Canyon' width="680" height="400">
+            </a>
+            <div class="description">The floor of Death Canyon</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Wyoming Photos/Grass sun water.JPG">
-            <img src='Wyoming Photos/Grass sun water.JPG' alt='Grassy' width="680" height="400">
-        </a>
-        <div class="description">A grassy field with a mountain river</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="imgs/Wyoming Photos/Grass sun water.JPG">
+                <img src='imgs/Wyoming Photos/Grass sun water.JPG' alt='Grassy' width="680" height="400">
+            </a>
+            <div class="description">A grassy field with a mountain river</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Wyoming Photos/Lake.JPG">
-            <img src='Wyoming Photos/Lake.JPG' alt='JennyLake' width="680" height="400">
-        </a>
-        <div class="description">Jenny Lake</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="imgs/Wyoming Photos/Lake.JPG">
+                <img src='imgs/Wyoming Photos/Lake.JPG' alt='JennyLake' width="680" height="400">
+            </a>
+            <div class="description">Jenny Lake</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Wyoming Photos/Mountain Lake.JPG">
-            <img src="Wyoming Photos/Mountain Lake.JPG" alt='Mountain Lake' width="680" height="400">
-        </a>
-        <div class="description">We found this lake at almost 9000' above sea level</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="imgs/Wyoming Photos/Mountain Lake.JPG">
+                <img src="imgs/Wyoming Photos/Mountain Lake.JPG" alt='Mountain Lake' width="680" height="400">
+            </a>
+            <div class="description">We found this lake at almost 9000' above sea level</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Wyoming Photos/Plains sunset.JPG">
-            <img src="Wyoming Photos/Plains sunset.JPG" alt='Plains Sunset' width="680" height="400">
-        </a>
-        <div class="description">Sunset on the plains of Wyoming</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="imgs/Wyoming Photos/Plains sunset.JPG">
+                <img src="imgs/Wyoming Photos/Plains sunset.JPG" alt='Plains Sunset' width="680" height="400">
+            </a>
+            <div class="description">Sunset on the plains of Wyoming</div>
+        </div>
     </div>
 </body>
 
